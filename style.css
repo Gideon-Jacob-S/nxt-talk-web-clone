@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@100,200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --font-family-1: Satoshi, sans-serif;
+    --font-family-2: Inter, sans-serif;
+
+    --bg-color-1: #1e293b;
+    --bg-color-2: #0f172a;
+    --bg-button-color: #2563eb;
+    --bg-image-gradient: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4b212d25fe3_A%20Rare%20Collection%20of%20Insider%20%20Knowledge%2C%20All%20Yours!%20(1).png");
+    
+    --primary-color: #e2e8f0;
+    --secondary-color: #cbd5e1;
+    --secondary-color-dark: #334155; 
+    --highlight-color: #a3e635;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, h1, p {
+    margin: 0px;
+}
+
+h1 {
+    font-family: var(--font-family-1);
+}
+
+.bg-container {
+    font-family: var(--font-family-2);
+    background-color: var(--bg-color-1);
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+.banner-seciton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.banner-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 50vw;
+    padding: 80px 0px;
+}
+
+.logo-link-container {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.logo-link-container:hover {
+    text-decoration: none;
+}
+
+.logo-text {
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.banner-heading-parent-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner-heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.banner-heading {
+    color: var(--primary-color);
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.banner-company-heading {
+    margin-top: 10px;
+    width: 140px;
+}
+
+.heading-highlight {
+    color: var(--highlight-color);
+}
+
+.banner-cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    width: 80%;
+}
+
+.button {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+    
+    white-space: nowrap;   
+    padding: 12px 138px;
+    border-radius: 8px;
+    width: 420px;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-transition {
+    transition: 0.5s ease-out;      
+}
+
+.btn-transition:hover {            
+    scale: 1.10;
+    transition: 0.6s ease-out;
+}
+
+.btn-solid {
+    background-color: var(--bg-button-color);
+    border: 1px solid var(--bg-button-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+.embed-video {
+    height: 530px;
+    width: 942px;
+    border-radius: 10px;
+}
+
+.banner-description {
+    color: var(--primary-color);
+    font-size: 15px;
+    margin: 0px;
+}
+
+.offer-strike-through {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.offer-strike-through:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 3px solid var(--highlight-color);
+    transform: rotate(-15deg);
+    transform-origin: center;
+}
+
+.offer-highlight {
+    color: var(--highlight-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.teaser-video {
+    width: 30%;
+    height: 100vh;
+}
+
+.dream-companies-section {
+    background-color: var(--bg-color-2);
+    padding: 90px 0px;
+    overflow: hidden;              
+}
+
+.dream-companies-heading {
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.dream-companies-logo-conatiner {
+    margin-left: -55%;             
+    transition: 6s ease-in-out;  
+}
+
+.dream-companies-logo-conatiner:hover {
+    margin-left: 30px;
+    transition: 6s ease-in-out;
+}
+
+.dream-companies-logo {
+    margin: 56px 0px 0px 0px;
+    height: 55px;
+}
+
+.collections-section {
+    background-image: var(--bg-image-gradient);
+    background-size: cover;
+    min-height: 100vh;
+    padding: 96px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.collections-heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.collections-description {
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.collections-filter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.collections-filter {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+}
+
+.collections-filter-highlight {
+    background-color: var(--primary-color);
+    color: var(--bg-color-2);
+}
+
+.cards-contianer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.speaker-card {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.speaker-card-thumbnail-1,
+.speaker-card-thumbnail-2,
+.speaker-card-thumbnail-3 {
+    height: 195px;
+    padding: 18px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.speaker-card-thumbnail-1 {
+    background-image: url("https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png");
+}
+
+.speaker-card-thumbnail-2 {
+    background-image: url("https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png");
+}
+
+.speaker-card-thumbnail-3 {
+    background-image: url("https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png");
+}
+
+.speaker-card-trailer-button {
+    background-color: #60a5fa;
+    color: var(--primary-color);
+    font-size: 14px;
+
+    padding: 6px 16px;
+    border: none;
+    border-radius: 50px;
+}
+
+.speaker-card-trailer-button-icon {
+    margin-left: 6px;
+}
+
+.speaker-card-trailer-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.speaker-card-text-container {
+    background-color: var(--secondary-color-dark);
+    text-align: left;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.speaker-card-heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.44;
+    margin: 0px;
+}
+
+.speaker-card-duration {
+    color: var(--secondary-color);
+    font-size: 14px;
+    margin: 0px;
+}
+
+.icon {
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+.speaker-card-speaker-bio {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.speaker-card-speaker-name-highlight {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.speaker-card-cta-link {
+    font-size: 14px;
+    margin: 16px 0px;
+    text-decoration: none;
+    color: #60a5fa;
+}
+
+.speaker-card-cta-link:hover {
+    text-decoration: none;
+    color: #60a5fa;
+}
+
+.link-to-next-icon {
+    font-size: 14px;
+}
+
+.collections-cta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.colleciton-offer-description {
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.testimonials-section {
+    background-color: var(--bg-color-2);
+    color: var(--primary-color);
+    min-height: 100vh;
+    padding: 72px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-heading {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.testimonials-counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    background-color: #713f1230;
+    border: 1px solid #713f12;
+    border-radius: 50px;
+    padding: 8px 12px;
+    margin-bottom: 48px;
+    font-size: 20px;
+}
+
+.testimonials-counter-image {
+    width: 32px;
+}
+
+.testimonials-counter-descritpion {
+    color: #f59e0b;
+    font-weight: 500;
+}
+
+.carousel-inner .carousel-item .wrap-container {         
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    font-size: 24px;
+}
+
+.carousel-indicators {
+    margin-bottom: -40px;
+}
+
+.carousel-indicators button {
+    background-color: transparent;
+    border: none;
+    width: max-content !important;
+}
+
+.carousel-indicators button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.carousel-indicators i {
+    display: block;
+    color: #e2e8f0aa;
+    font-size: 6px;
+}
+
+.carousel-indicators button.active i {
+    color: #e2e8f0 !important;
+}
+
+.testimonial-card {
+    background-color: var(--bg-color-1);
+    border-radius: 8px;
+    padding: 24px 16px;
+    max-width: 528px;
+    min-width: 528px;
+}
+
+.testimonial-card-profile-image {
+    height: 64px;
+    width: 64px;
+}
+
+.testimonial-card-profile-name {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.testimonial-card-profile-description {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.testimonial-card-descritpion {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.testimonial-card-descritpion-link {
+    color: #60a5fa;
+}
+
+.testimonial-card-descritpion-link:hover {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.values-section {
+    background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4e843d25fd4_NxtWave's%20Empowering%20Podcast%20Series%20%20to%20Shape%20your%20Dream%20Career.%20(1).png");
+    background-size: cover;
+    min-height: 100vh;
+    color: var(--primary-color);    
+    padding: 96px 110px;
+}
+
+.values-section-container {
+    margin: 0px 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.values-section-heading {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.values-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.value-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.value-card-image {
+    height: 60px;
+}
+
+.value-card-description {
+    font-size: 24px;
+    margin: 0px;
+}
+
+.claim-free-access-section {
+    background-color: var(--bg-color-2);
+    color: var(--primary-color);
+    min-height: 62vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.claim-free-access-section-container {
+    min-width: 82vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.claim-free-access-heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.claim-free-access-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    min-height: 70%;
+    min-width: 418px;
+}
+
+.claim-free-access-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.claim-free-access-input {
+    padding: 8px 14px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background-color: var(--secondary-color-dark);
+    color: var(--primary-color);
+    height: 36px;
+}
+
+.claim-free-access-input::placeholder {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.claim-free-access-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.input-error {
+    border: 1px solid #f87171;
+}
+
+.claim-free-access-error {
+    margin: 0px;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #d82327;
+    height: 16px;
+}
+
+.info-section {
+    background-image: url("https://cdn.prod.website-files.com/64362e90abbff481a6d25ce8/645345c7c2106e1bd1c65a6c_Background%20String.png");
+    background-size: cover;
+    height: 18vh;
+    padding: 0px 10vw;
+
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info-section-description {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.footer-section {
+    background-color: var(--bg-color-2);
+    min-height: 85vh;
+    padding: 96px 0px;
+}
+
+.footer-section-parent-container {
+    margin: 0px 10vw;
+    padding: 0px 36px;
+}
+
+.footer-section-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-section-heading {
+    font-size: 18px;
+    font-family: var(--font-family-2);
+    font-weight: bold;
+    color: #5a7185;
+    margin-bottom: 24px;
+}
+
+.footer-section-email {
+    color: #5c6676;
+    font-size: 16px;
+    font-family: var(--font-family-2);
+}
+
+.footer-section-email:hover {
+    color: #5c6676;
+    text-decoration: none;
+}
+
+.footer-section-top-child-container {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+}
+
+.footer-quick-links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-quick-links-child-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section-link {
+    margin: 6px 0px;
+    
+    font-family: var(--font-family-2);
+    color: #5c6676;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.2s ease-out;
+}
+
+.footer-section-link:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.footer-payment-methods-card-container {
+    max-width: 250px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 12px;
+}
+
+.footer-payment-methods-card {
+    flex-shrink: 0;
+    width: 64px;
+}
+
+.footer-section-address {
+    max-width: 230px;
+    font-weight: 500;
+    color: #5c6676;
+    margin: 0px;
+}
+
+.footer-section-ruler {
+    background-color: var(--secondary-color-dark);
+    margin: 32px 0px;
+}
+
+.footer-section-bottom-container {
+    margin-top: 48px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-social-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-social-link {
+    color: var(--primary-color);
+    width: 24px;
+}
+
+.footer-social-link:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-sitemaps-container {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-section-sitemap {
+    font-size: 16px;
+    font-weight: 500;
+    color: #334255;
+    transition: 0.15s ease-out;
+}
+
+.footer-section-sitemap:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.15s ease-in;
+}
+
+.modal-content {
+    border: none !important;
+}
+
+.modal-backdrop { 
+    background-color: #000000 !important;      
+}
+
+.author-info-container {
+    background-color: var(--secondary-color-dark);
+    color: var(--primary-color);
+
+    border-radius: 16px;
+    padding: 12px 8px;
+}
+
+.author-info-modal {
+    text-align: start;
+    overflow-y: auto;
+    height: 80vh;
+}
+
+.author-info-modal::-webkit-scrollbar {                            
+    width: 4px;
+}
+
+.author-info-modal::-webkit-scrollbar-thumb {
+    background-color: #94A3B8 !important;
+    border-radius: 6px;
+}
+
+.modal-button {
+    background-color: transparent;
+    border: none;
+
+    position:sticky;
+    top: 24px;
+    right: 24px;
+}
+
+.modal-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.modal-body-content {
+    padding: 32px 38px;
+}
+
+.modal-heading {
+    font-family: var(--font-family-2);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+
+.modal-speaker-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.modal-speaker-card-image {
+    height: 72px;
+    width: 72px;
+}
+
+.modal-speaker-card-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-speaker-card-heading {
+    font-family: var(--font-family-2);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.modal-speaker-card-description {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.modal-podcast-name {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.modal-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 614px;
+    margin-bottom: 30px;
+}
+
+.modal-experience-heading {
+    font-family: var(--font-family-2);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.modal-experience-description {
+    font-size: 16px;
+    margin: 10px 0px 16px 0px;
+}
+
+.modal-experience-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+}
+
+.modal-experience-image {
+    height: 36px;
+}
+
+.modal-learning-outcomes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-learning-outcomes-heading {
+    font-family: var(--font-family-2);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.modal-learning-outcomes-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    padding: 0px;
+}
+
+.modal-learning-outcomes-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+}
